@@ -110,6 +110,7 @@ const Admin = () => {
       tipoRodou: bm.tipoRodou,
       formaPagamento: bm.formaPagamento,
       status: bm.status,
+      valor: bm.valor || "",
       observacoes: ""
     });
     setDialogOpen(true);
