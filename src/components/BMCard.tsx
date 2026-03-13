@@ -57,7 +57,7 @@ const BMCard = ({ bm }: { bm: BMData }) => {
 
       {available && (
         <a
-          href={`${WHATSAPP_URL}?text=${encodeURIComponent(`Olá! Tenho interesse na ${bm.name}`)}`}
+          href={`${WHATSAPP_URL}?text=${encodeURIComponent(`Vim pelo site e tenho interesse na ${bm.name}`)}`}
           target="_blank"
           rel="noopener noreferrer"
           className="mt-6 block rounded-lg bg-primary py-2.5 text-center text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 glow-purple"
