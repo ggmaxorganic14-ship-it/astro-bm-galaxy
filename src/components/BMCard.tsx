@@ -13,7 +13,7 @@ export interface BMData {
   valor: string;
 }
 
-const WHATSAPP_URL = "https://wa.me/5500000000000";
+const WHATSAPP_URL = "https://wa.me/5511989604385";
 
 const BMCard = ({ bm }: { bm: BMData }) => {
   const available = bm.status === "Disponível";
