@@ -27,15 +27,22 @@ const BMCard = ({ bm }: { bm: BMData }) => {
     >
       <div className="mb-4 flex items-center justify-between">
         <h3 className="text-lg font-bold text-foreground">{bm.name}</h3>
-        <span
-          className={`rounded-full px-3 py-1 text-xs font-semibold ${
-            available
-              ? "bg-accent/15 text-accent"
-              : "bg-muted text-muted-foreground"
-          }`}
-        >
-          {bm.status}
-        </span>
+        <div className="flex items-center gap-2">
+          {available && bm.valor && (
+            <span className="rounded-full bg-primary/15 px-3 py-1 text-xs font-bold text-primary">
+              {bm.valor}
+            </span>
+          )}
+          <span
+            className={`rounded-full px-3 py-1 text-xs font-semibold ${
+              available
+                ? "bg-accent/15 text-accent"
+                : "bg-muted text-muted-foreground"
+            }`}
+          >
+            {bm.status}
+          </span>
+        </div>
       </div>
 
       <div className="space-y-2 text-sm text-secondary-foreground">

@@ -330,6 +330,12 @@ const Admin = () => {
                 </SelectContent>
               </Select>
             </Field>
+            <Field label="Valor (preço de venda)">
+              <Input
+                value={form.valor}
+                onChange={(e) => setForm({ ...form, valor: e.target.value })}
+                placeholder="R$ 0" />
+            </Field>
             <Field label="Status">
               <Select
                 value={form.status}

@@ -13,6 +13,7 @@ const defaultBMs: BMData[] = [
     tipoRodou: "White - Loja de roupas",
     formaPagamento: "Empresa",
     status: "Disponível",
+    valor: "R$ 350",
   },
   {
     id: "2",
@@ -24,6 +25,7 @@ const defaultBMs: BMData[] = [
     tipoRodou: "White - Infoproduto",
     formaPagamento: "Pessoal",
     status: "Disponível",
+    valor: "R$ 280",
   },
   {
     id: "3",
@@ -35,6 +37,7 @@ const defaultBMs: BMData[] = [
     tipoRodou: "White - E-commerce",
     formaPagamento: "Empresa",
     status: "Vendida",
+    valor: "R$ 500",
   },
 ];
 
