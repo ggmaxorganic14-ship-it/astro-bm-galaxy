@@ -32,7 +32,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import logo from "@/assets/logo-astro.png";
 
-const ADMIN_PASS = "astro2024";
+const ADMIN_PASS = "Cairo29@";
 
 interface BMForm {
   name: string;
