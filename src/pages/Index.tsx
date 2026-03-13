@@ -5,6 +5,7 @@ import BMSection from "@/components/BMSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => (
   <>
@@ -17,6 +18,7 @@ const Index = () => (
       <ContactSection />
     </main>
     <Footer />
+    <WhatsAppButton />
   </>
 );
 
