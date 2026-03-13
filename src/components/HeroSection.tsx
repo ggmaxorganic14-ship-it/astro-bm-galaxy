@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import logo from "@/assets/logo-astro.png";
 
-const WHATSAPP_URL = "https://wa.me/5500000000000";
+const WHATSAPP_URL = "https://wa.me/5511989604385";
 
 const HeroSection = () =>
 <section id="home" className="relative flex min-h-screen items-center overflow-hidden pt-16">
