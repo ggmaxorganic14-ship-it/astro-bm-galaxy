@@ -29,8 +29,9 @@ const BMCard = ({ bm }: { bm: BMData }) => {
         <h3 className="text-lg font-bold text-foreground">{bm.name}</h3>
         <div className="flex items-center gap-2">
           {available && bm.valor && (
-            <span className="rounded-full bg-primary/15 px-3 py-1 text-xs font-bold text-primary">
-              {bm.valor}
+            <span className="inline-flex items-baseline gap-0.5 rounded-lg bg-primary/10 px-3 py-1.5 font-bold text-primary ring-1 ring-primary/20">
+              <span className="text-[10px] uppercase tracking-wide opacity-70">R$</span>
+              <span className="text-base">{bm.valor.replace(/R\$\s?/, '')}</span>
             </span>
           )}
           <span
