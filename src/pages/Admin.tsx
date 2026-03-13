@@ -43,6 +43,7 @@ interface BMForm {
   tipoRodou: string;
   formaPagamento: string;
   status: "Disponível" | "Vendida";
+  valor: string;
   observacoes?: string;
 }
 
@@ -55,6 +56,7 @@ const emptyForm: BMForm = {
   tipoRodou: "",
   formaPagamento: "Empresa",
   status: "Disponível",
+  valor: "",
   observacoes: ""
 };
 
