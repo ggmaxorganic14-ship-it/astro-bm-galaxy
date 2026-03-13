@@ -43,6 +43,7 @@ interface BMForm {
   tipoRodou: string;
   formaPagamento: string;
   status: "Disponível" | "Vendida";
+  valor: string;
   observacoes?: string;
 }
 
@@ -55,6 +56,7 @@ const emptyForm: BMForm = {
   tipoRodou: "",
   formaPagamento: "Empresa",
   status: "Disponível",
+  valor: "",
   observacoes: ""
 };
 
@@ -108,6 +110,7 @@ const Admin = () => {
       tipoRodou: bm.tipoRodou,
       formaPagamento: bm.formaPagamento,
       status: bm.status,
+      valor: bm.valor || "",
       observacoes: ""
     });
     setDialogOpen(true);
@@ -326,6 +329,12 @@ const Admin = () => {
                   <SelectItem value="Pessoal">Pessoal</SelectItem>
                 </SelectContent>
               </Select>
+            </Field>
+            <Field label="Valor (preço de venda)">
+              <Input
+                value={form.valor}
+                onChange={(e) => setForm({ ...form, valor: e.target.value })}
+                placeholder="R$ 0" />
             </Field>
             <Field label="Status">
               <Select
