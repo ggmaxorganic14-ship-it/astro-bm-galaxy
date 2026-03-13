@@ -10,6 +10,7 @@ export interface BMData {
   tipoRodou: string;
   formaPagamento: string;
   status: "Disponível" | "Vendida";
+  valor: string;
 }
 
 const WHATSAPP_URL = "https://wa.me/5500000000000";
